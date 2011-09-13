@@ -1,0 +1,13 @@
+<div class="container">
+
+    <div class="span12 columns">
+      <div class="well" style="padding: 14px 19px;margin-left:100px;">
+        <%= form_for(:index,:url => {:controller => 'index',:action => 'get_random'},:remote => true) do |form|%>
+          <button class="btn primary large" style="margin-left:15px;">发牌</button><br/>
+        <% end %>
+        <div style="padding: 14px 19px;">抽牌结果:</div>
+        <div id="result" class="well" style="padding: 14px 19px;margin:10px">
+      	</div>
+      </div>
+    </div>
+  </div>
